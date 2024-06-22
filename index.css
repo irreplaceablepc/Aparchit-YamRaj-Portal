@@ -7,8 +7,10 @@ body {
 
 .horror-logo {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
+    max-width: 50px; /* Maximum width */
+    max-height: 50px; /* Maximum height */
     filter: grayscale(100%); /* Make the image black and white */
     box-shadow: 0 0 20px red; /* Red glow effect */
 }
@@ -19,7 +21,8 @@ body {
     border: 2px solid red; /* Red border */
     border-radius: 10px;
     margin: 20px auto;
-    width: 300px;
+    width: 80vw; /* Responsive width */
+    max-width: 300px; /* Maximum width */
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
@@ -38,7 +41,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     background-color: red; /* Red background */
     color: #000; /* Black text */
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }

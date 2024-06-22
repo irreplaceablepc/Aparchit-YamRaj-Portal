@@ -26,7 +26,7 @@ auth.onAuthStateChanged(user => {
 function displayUserDetails(user) {
     const userDetailsDiv = document.getElementById('user-details');
     userDetailsDiv.innerHTML = `
-        <p style="font-size: 20px; color: red;"><strong>Email:</strong> ${user.email}</p>
+        <h2 style="font-size: 15px; color: red;"><strong>Email:</strong> ${user.email}</h2>
     `;
 }
 
@@ -52,10 +52,10 @@ var db = firebase.firestore();
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
         .then(function() {
-            console.log("Document successfully written!");
+            alert("समस्या प्राप्त हो गई");
             window.location.href = "Confirmation.html";
         })
         .catch(function(error) {
-            console.error("Error writing document: ", error);
+            alert("Error writing document: " + error);
         });
     });

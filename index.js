@@ -56,7 +56,20 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
         })
         .catch((error) => {
             console.error("Error signing in: ", error);
+        
+            // Extract a simpler or custom message
+            let errorMessage;
+            if (error.message.includes("invalid")) {
+                errorMessage = "Incorrect password.";
+            } else if (error.message.includes("email")) {
+                errorMessage = "Invalid email address.";
+            } else {
+                errorMessage = "An unknown error occurred.";
+            }
+        
+            alert(`Error signing in: ${errorMessage}`);
         });
+        
 });
 
 // Handle sign-up
@@ -69,11 +82,11 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         .then((userCredential) => {
             // Signed up
             var user = userCredential.user;
-            console.log('User signed up:', user);
+            alert('User signed up: ' + user.email);
         })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
-            console.error('Error signing up:', errorCode, errorMessage);
+            alert('Error signing up: ' + errorCode + ' ' + errorMessage);
         });
 });

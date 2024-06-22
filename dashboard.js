@@ -26,7 +26,7 @@ auth.onAuthStateChanged(user => {
 function displayUserDetails(user) {
     const userDetailsDiv = document.getElementById('user-details');
     userDetailsDiv.innerHTML = `
-        <h2 style="font-size: 20px; color: red;"><strong>Email:</strong> ${user.email}</h2>
+        <h2 style="font-size: 15px; color: red;"><strong>Email:</strong> ${user.email}</h2>
     `;
 }
 

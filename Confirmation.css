@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ body {
 .box {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.700);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1vw;
 }
 
@@ -27,9 +27,47 @@ video {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 200px; /* Adjust width as needed */
-    height: 31%; /* Full height */
-    color: white; /* Text color */
-    padding: 20px; /* Padding inside the container */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5); /* Optional shadow for better visibility */
+    width: 200px;
+    height: 21%;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.horror-logo {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container.dashboard {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        box-shadow: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .box {
+        padding: 0;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .horror-logo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #logout-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
 }

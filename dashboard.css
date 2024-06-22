@@ -15,11 +15,27 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 200px; /* Adjust width as needed */
-    height: 31%; /* Full height */
+    width: 15%; /* Adjust width as needed */
+    height: 16%; /* Full height */
     color: white; /* Text color */
-    padding: 20px; /* Padding inside the container */
+    padding: 5px; /* Padding inside the container */
     box-shadow: 2px 0 5px rgba(0,0,0,0.5); /* Optional shadow for better visibility */
+}
+
+@media (max-width: 768px) {
+    .container.dashboard {
+        width: 50%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container.dashboard {
+        width: 80%; /* Adjust width for very small screens */
+        height: auto; /* Adjust height for very small screens */
+        padding: 5px; /* Adjust padding for very small screens */
+    }
 }
 
 
@@ -61,8 +77,8 @@ button {
     height: auto;
     width: auto;
     font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem;
+    /* font-weight: bold; */
+    padding: 0.2rem;
     cursor: pointer;
     background-color: red;
     color: black;
