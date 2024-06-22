@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="yamraj.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="Request.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Aparchit & YamRaj Portal</title>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>गलती की सजा - मौत!</h1>
+
+        <br>
+
+        <p>गरुड़ पुराण के हिसाब से सबको सजा मिलेगी।</p>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <p>अपनी समस्या लिखो। अपरिचित इन्साफ करेगा।</p>
+
+        <br>
+
+        <textarea id="input"></textarea>
+
+        <br> <br>
+
+        <button id="submit-button">SUBMIT</button>
+
+    </div>
+
+    <audio src="Audios/Theme Song.mp3" autoplay></audio>
+
+    <div class="container dashboard" id="dashboard">
+        <img src="yamraj.jpeg" alt="YamRaj Logo" class="horror-logo">
+        <div id="user-details"></div>
+        <button id="logout-button" class="horror-button">Log Out</button>
+    </div>
+
+    <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src="Request.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Creepster', cursive; /* Eerie font */
+    text-align: center;
+}
+
+.horror-logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%); /* Make the image black and white */
+    box-shadow: 0 0 20px red; /* Red glow effect */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border: 2px solid red; /* Red border */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 300px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 92%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid red; /* Red border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.horror-button {
+    background-color: red; /* Red background */
+    color: #000; /* Black text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.horror-button:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+.horror-link {
+    color: red; /* Red text */
+    text-decoration: none;
+}
+
+.horror-link:hover {
+    text-decoration: underline;
+}
